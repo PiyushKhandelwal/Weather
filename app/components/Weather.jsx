@@ -14,10 +14,10 @@ var Weather = React.createClass({
 	handleGetWeather: function(weather){
 		var that = this;
 		this.setState({isLoading :true});
-		openWeatherApi.getTemperature(weather.cityname).then(function(temperature){
+		openWeatherApi.getTemperature(weather.cityname).then(function(weatherRes){
 			that.setState({
 				cityname : weather.cityname,
-				temperature: temperature,
+				temperature: weatherRes,
 				isLoading: false
 			});
 		},function(err){
@@ -38,10 +38,16 @@ var Weather = React.createClass({
 		}
 
 		return(
-			<div>
-				<WeatherForm onGetWeather={this.handleGetWeather}/>
-				{loadWeatherMessage()}
-			</div>
+			<div style={{margin:'auto',maxWidth:'400px'}}>
+  				<div className="panel panel-default">
+  					<div className="panel-heading">
+  						<WeatherForm onGetWeather={this.handleGetWeather}/>
+  					</div>
+  					<div className="panel-body">
+    					{loadWeatherMessage()}
+  					</div>
+				</div>
+  			</div>
 		);
 	}
 });

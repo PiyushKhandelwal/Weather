@@ -13,7 +13,7 @@ module.exports={
 				if(res.data.cod && (res.message || res.data.message)){
 					throw new Error(res.message);
 				}else{
-					return res.data.main.temp;
+					return res.data;
 				}
 			},function(res){
 				if(res.message || res.data.message ){

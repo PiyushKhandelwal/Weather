@@ -5,7 +5,7 @@ var {Link, IndexLink} = require("react-router");
 var NavBox = (props) => {
 	return (
 		<div className="container" style={{paddingTop: '20px',paddingBottom:'20px'}}>
-				<nav className="navbar navbar-default">
+				<nav className="navbar navbar-inverse">
 				 <div className="container-fluid">
 				 	<div className="navbar-header">
 				 		<a className="navbar-brand" href="#">React Weather</a>
