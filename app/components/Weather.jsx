@@ -38,7 +38,7 @@ var Weather = React.createClass({
 		}
 
 		return(
-			<div style={{margin:'auto',maxWidth:'400px'}}>
+			<div className="container" style={{margin:'auto',maxWidth:'400px'}}>
   				<div className="panel panel-default">
   					<div className="panel-heading">
   						<WeatherForm onGetWeather={this.handleGetWeather}/>
