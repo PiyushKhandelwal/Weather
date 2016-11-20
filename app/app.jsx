@@ -6,6 +6,8 @@ var Weather = require("Weather");
 var About = require("About");
 var Example = require("Example");
 
+require('style!css!bootstrap/dist/css/bootstrap.min.css');
+
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Home}>
