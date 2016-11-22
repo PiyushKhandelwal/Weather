@@ -20,7 +20,7 @@ var WeatherForm = React.createClass({
   				<div className="input-group">
   					<input type="text" placeholder="Enter city name" ref="cityname" className="form-control"/>
   					<span className="input-group-btn">
-        				<button className="btn btn-default" type="submit">Go!</button>
+        				<button className="btn btn-default" type="submit"><i className="glyphicon glyphicon-search"></i></button>
       				</span>
   				</div>
   			</form>
