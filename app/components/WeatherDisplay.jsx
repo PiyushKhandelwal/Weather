@@ -11,22 +11,22 @@ var WeatherDisplay = (props) => {
 				</p>
 
 				<div>
-					<div className="temperatureStats">
+					<div className="temperatureStats col-xs-3">
 						<i className="glyphicon glyphicon-transfer"></i>
 						<p>Wind</p>
 						<p>{temperature.wind.speed} km/h</p>
 					</div>
-					<div className="temperatureStats">
+					<div className="temperatureStats col-xs-3">
 						<i className="glyphicon glyphicon-tint"></i>
 						<p>humidity</p>
 						<p>{temperature.main.humidity} %</p>
 					</div>
-					<div className="temperatureStats">
+					<div className="temperatureStats col-xs-3">
 						<i className="glyphicon glyphicon-upload"></i>
 						<p>Sunrise</p>
 						<p>{new Date(temperature.sys.sunrise * 1000).toLocaleTimeString()}</p>
 					</div>
-					<div className="temperatureStats">
+					<div className="temperatureStats col-xs-3">
 						<i className="glyphicon glyphicon-download"></i>
 						<p>Sunset</p>
 						<p>{new Date(temperature.sys.sunset * 1000).toLocaleTimeString()}</p>

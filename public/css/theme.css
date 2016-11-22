@@ -79,11 +79,8 @@
   			position: relative;
 		}
 		.temperatureStats{
-			width:75px;
 			text-align: center;
 			letter-spacing: 1px;
-			margin-left: 10px;
-			float: left;
 		}
 		.temperatureStats p {
  			 font-size: 12px;
