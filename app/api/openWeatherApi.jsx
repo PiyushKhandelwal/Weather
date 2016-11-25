@@ -15,9 +15,12 @@ module.exports={
 				}else{
 					return res.data;
 				}
-			},function(res){
-				if(res.message || res.data.message ){
-					throw new Error(res.message);
+			},function(error){
+				if(error.response){
+					throw new Error(error.response.data);
+				}
+				else {
+					throw new Error(error.message);
 				}
 			});
 
