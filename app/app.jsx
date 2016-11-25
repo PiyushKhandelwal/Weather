@@ -7,7 +7,7 @@ var About = require("About");
 var Example = require("Example");
 
 require('style!css!bootstrap/dist/css/bootstrap.min.css');
-require('style!css!public/css/theme.css');
+require('style!css!sass!public/css/app.scss');
 
 ReactDOM.render(
 	<Router history={hashHistory}>

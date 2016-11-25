@@ -1,8 +1,8 @@
 var React = require("react");
 var weatherIcons = require("../repository/weatherIcon.js");
 
-require('style!css!public/css/weather-icons.min.css');
-require('style!css!public/css/weather-icons-wind.min.css');
+/*require('style!css!public/css/weather-icons.min.css');
+require('style!css!public/css/weather-icons-wind.min.css');*/
 
 var WeatherDisplay = React.createClass({
 	
